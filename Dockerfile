@@ -1,3 +1,4 @@
-FROM squidfunk/mkdocs-material:latest
+FROM zensical/zensical:lastest
 
-CMD ["serve", "-a", "0.0.0.0:8000", "--livereload"]
+# Posible fix para livereload no funcionando
+# CMD ["serve", "-a", "0.0.0.0:8000"]

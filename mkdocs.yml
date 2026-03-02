@@ -1,8 +1,0 @@
-site_name: ServerSight Docs
-site_url: https://serversight.docs.example.com
-site_description: Documentation for ServerSight monitoring tool.
-theme:
-  name: material
-nav:
-  - Home: index.md
-  - Testing: test.md

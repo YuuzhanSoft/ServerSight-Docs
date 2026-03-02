@@ -2,6 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Virtual environments
 env/
@@ -9,6 +12,8 @@ venv/
 .venv/
 ENV/
 .env
+.env.*
+venv.bak/
 
 # Packaging / build
 build/
@@ -21,24 +26,67 @@ pip-wheel-metadata/
 .mypy_cache/
 .coverage
 htmlcov/
+coverage.xml
 
-# MkDocs
-/site/
-
-# MkDocs Material / frontend
+# Node / frontend
 node_modules/
-.sass-cache/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.pnpm-store/
 .cache/
 .parcel-cache/
-npm-debug.log*
-yarn-error.log
+.next/
+out/
+.dist/
+.build/
+.vite/
+public/build/
+
+# Framework / static site generators
+/site/
+.docusaurus/
+.storybook/
+.voc/
+
+# MkDocs Material / frontend
+.sass-cache/
 pnpm-lock.yaml
 
-# IDEs / editors
+# Misc logs
+*.log
+
+# Environment / secrets
+.env.local
+.env.*.local
+secrets.env
+*.pem
+*.key
+
+# Editors / IDEs
 .vscode/
 .idea/
 *.iml
+*.sublime-workspace
+*.sublime-project
 
 # OS
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Docker
+docker-compose.override.yml
+.env.docker
+
+# CI / tooling
+.cache/
+dist/
+coverage/
+
+# Misc
+*.db
+*.sqlite3
